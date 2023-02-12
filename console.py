@@ -175,7 +175,7 @@ class HBNBCommand(cmd.Cmd):
         return True
 
     def postloop(self):
-            print()
+        print()
 
 
 if __name__ == '__main__':
