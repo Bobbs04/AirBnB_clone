@@ -2,12 +2,14 @@
 
 from models.base_model import BaseModel
 
+
 class Amenity(BaseModel):
     """Amenity class inherits from BaseModel
 
     Attribute:
         name (str): Public class attribute for Amenity's name
     """
+
     name = ""
 
     def __init__(self, *args, **kwargs):
@@ -18,4 +20,3 @@ class Amenity(BaseModel):
             kwargs (dict): A dictionary with arguments
         """
         super().__init__(*args, **kwargs)
-

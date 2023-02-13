@@ -2,6 +2,7 @@
 
 from models.base_model import BaseModel
 
+
 class User(BaseModel):
     """User class inherits from BaseModel
 
@@ -24,4 +25,3 @@ class User(BaseModel):
             kwargs (dict): A dictionary with arguments
         """
         super().__init__(*args, **kwargs)
-

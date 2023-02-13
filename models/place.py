@@ -42,4 +42,3 @@ class Place(BaseModel):
             kwargs (dict): A dictionary with arguments
         """
         super().__init__(*args, **kwargs)
-

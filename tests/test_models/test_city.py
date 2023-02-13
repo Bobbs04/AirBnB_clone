@@ -158,8 +158,7 @@ class TestCity(unittest.TestCase):
         self.assertNotEqual(self.C.id, C1.id)
         self.assertNotEqual(self.C.id, C2.id)
 
-    def t
-est_id_type_string(self):
+    def test_id_type_string(self):
         """test id of the class is a string
         """
         self.assertEqual(type(self.C.id), str)
@@ -172,4 +171,3 @@ est_id_type_string(self):
         time2 = self.C.updated_at
         self.assertNotEqual(time1, time2)
         self.assertEqual(type(time1), datetime)
-

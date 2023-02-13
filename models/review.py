@@ -2,6 +2,7 @@
 
 from models.base_model import BaseModel
 
+
 class Review(BaseModel):
     """Review class inherits from BaseModel
 
@@ -22,4 +23,3 @@ class Review(BaseModel):
             kwargs (dict): A dictionary with arguments
         """
         super().__init__(*args, **kwargs)
-

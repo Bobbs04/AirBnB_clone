@@ -2,6 +2,7 @@
 
 from models.base_model import BaseModel
 
+
 class State(BaseModel):
     """State class inherits from BaseModel
 
@@ -18,4 +19,3 @@ class State(BaseModel):
             kwargs (dict): A dictionary with arguments
         """
         super().__init__(*args, **kwargs)
-

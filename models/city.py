@@ -2,6 +2,7 @@
 
 from models.base_model import BaseModel
 
+
 class City(BaseModel):
     """City class inherits from BaseModel
 
@@ -20,4 +21,3 @@ class City(BaseModel):
             kwargs (dict): A dictionary with arguments
         """
         super().__init__(*args, **kwargs)
-

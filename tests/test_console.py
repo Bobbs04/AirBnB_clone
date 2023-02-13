@@ -50,4 +50,3 @@ class TestHBNBCommand(unittest.TestCase):
         Tests if class docstring documentation exist
         """
         self.assertTrue(len(HBNBCommand.__doc__) >= 1)
-
