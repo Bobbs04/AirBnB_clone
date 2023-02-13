@@ -17,6 +17,22 @@ class HBNBCommand(cmd.Cmd):
     class_list = ['BaseModel', 'User', 'State', 'City', 'Amenity', 'Place',
                   'Review']
 
+    l_c = ['create', 'show', 'update', 'all', 'destroy', 'count']
+
+    def precmd(self, arg):
+        """parses command input"""
+        if '.' in arg and '(' in arg and ')' in arg:
+            cls = arg.split('.')
+            cnd = cls[1].split('(')
+            args = cnd[1].split(')')
+            if cls[0] in HBNBCommand.class_list and cnd[0] in HBNBCommand.l_c:
+                arg = cnd[0] + ' ' + cls[0] + ' ' + args[0]
+        return arg
+
+    def help_help(self):
+        """ Prints help command description """
+        print("Provides description of a given command")
+
     def do_EOF(self, args):
         """EOF command to exit the program.
         """
